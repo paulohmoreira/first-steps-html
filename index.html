@@ -1,61 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
-<body>
+<body id="home">
     <h1>Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h2 id="indice">Índice</h2>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#client">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#aplicacoes-web">Aplicações Web</a></li>
+        <li><a href="#estrutura-basica">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#linguagem-programacao">Linguagem de programção: o que é?</a></li>
+        <li><a href="#links">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <h2 id="client">O que são <i>Clients</i>?</h2>
+    <a href="#home"><small>&larr; Voltar</small> </a>
+    <p>Trazendo para o bom e velho português, é o lado do <mark>cliente</mark>, onde o usuário (cliente) consegue visualizar, fazer requisições e receber respostas. Os navegadores (browsers) são um exemplo de software que permite o usuário visualizar páginas web, sendo assim podemos dizer que é o lado client da arquitetura web</p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+      <li>Inicia solicitações para os servidores</li>
+      <li>Recebe respostas</li>
+      <li>Interage diretamente com os servidores</li>
+    </ul>
+
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <a href="#home"><small>&larr; Voltar</small> </a>
+    <p>É o lado responsavél por lidar com as requisições do client, os servers ficam a espera dessas requisições, fazem o tratamento e devolvem uma resposta para o client </p>
+
+    <h2 id="aplicacoes-web">Aplicações Web</h2>
+    <a href="#home"><small>&larr; Voltar</small> </a>
+    <p>A Aplicação Web é executada diretamente pelo browser, <del>é o que vemos sendo executado no navegador</del> e por conta disso não tem a necessidade de instalação de algum outro programa além do navegador, é por ela que o usuário consegue interegir e gerar requisições no servidor</p>
+
+    <h2 id="estrutura-basica">Como é uma estrutura básica de um HTML?</h2>
+    <a href="#home"><small>&larr; Voltar</small> </a>
+    <p>HTML é uma linguagem de marcação, ou seja, as tags HTML são marcadores que indicam para o navegador qual comportamento o texto dentro daquela tag deve ter.</p>
+    <p>Para o navegador entender um documento HTML, ele deve ter uma estrutura básica:</p>
+    <ol>
+      <li><strong>&lt;!DOCTYPE html&gt;</strong> É a tag que define que este documento se trata de um documento HTML5 </li>
+      <li><strong>&lt;html&gt;</strong> Está é a base de todo o documento, é dentro dela que colocaremos todo os elementos do nosso site</li>
+      <li><strong>&lt;head&gt;</strong> As informações contidas dentro da head são para passar informações diretamente para o navegador, informações que podem mudar a apresentação da página html</li>
+      <li><strong>&lt;title&gt;</strong> Aqui colocamos o título da página que aparece na aba do navegador</li>
+      <li><strong>&lt;body&gt;</strong> Corpo da página, aqui fica todos os conteúdos visíveis para o usuário</li>
+    </ol>
+
+    <h2 id="linguagem-programacao">Linguagem de programção: o que é?</h2>
+    <a href="#home"><small>&larr; Voltar</small> </a>
+    <p>É um conjunto de instruções que o programador escreve e através disso o computador executa uma tarefa de acordo com as instruções que foram fornecidas. As linguagens podem ser compiladas, elas convertem o código para a linguagem de máquina, ou interpretadas, um interpretador fica responsável por ler o código e executar</p>
+    <h4>Top 10 Linguagens de programação mais usadas*<br> <sub>*De acordo com o site <a href="https://redmonk.com/sogrady/2022/03/28/language-rankings-1-22/">RedMonk</a></sub></h4>
+    
+    <ol>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>PHP</li>
+      <li>CSS</li>
+      <li>C#</li>
+      <li>C++</li>
+      <li>TypeScript</li>
+      <li>Ruby</li>
+      <li>C</li>
+    </ol>
+    
+    <h2 id="links">Links de referências</h2>
+    <a href="#home"><small>&larr; Voltar</small> </a>
+    <p></p>
+    <ul>
+        <li><a href="http://dio.me"><abbr title="Digital Innovation One ">DIO</abbr></a></li>
+        <li><a href="http://w3c.org">W3C</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN Web docs</a></li>
     </ul>
 
 </body>
